@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  /* gnb */
+  .gnb {
+    text-align: center;
+    width: 100%;
+  }
+  .gnb a {
+    font-size: 2.5em;
+    line-height: 2em;
+  }
+
+  /* Container */
+  section:not(.welcome) {
+    height: auto;
+    padding: 20px;
+  }
+  section .inner {
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 2em;
+  }
+  .heading p {
+    font-size: 1em;
+  }
+  .text-area {
+    width: 100%;
+  }
+  section#skills {
+    height: auto;
+  }
+  /* Section - About */
+  section#about {
+    height: 100%;
+  }
+  .about-details {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin: 25px;
+  }
+  .about-details > div {
+    width: auto;
+  }
+  /* Section - Skills */
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .items {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr)
+  }
+  .skillboxes {
+    width: 75%;
+  }
+
+  /* Section - Chrome Extension */
+  .chrome-box {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .showcase-1 {
+    display: none;
+  }
+  .showcase-2 {
+    display: block;
+  }
+  .chrome-box-desc {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1170px) {
+  section {
+    width: 100%;
+  }
+  .text-area {
+    width: 100%;
+  }
+  section .inner {
+    width: 100%;
+  }
+  section#about {
+    height: 100%;
+  }
+  .about-details {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .about-details > div {
+    width: auto;
+  }
+  section#skills {
+    height: auto;
+  }
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+  }
+  .items {
+    width: 100%;
+  }
+  .item.thum:nth-of-type(3), .item.thum:nth-of-type(4) {
+    grid-column: 1 / span 2;
+  }
+
+  .chrome-box {
+    flex-direction: column;
+  }
+  .chrome-box-desc {
+    width: 80%;
+    margin: auto;
+  }
+  .chrome-box-desc-inner {
+  }
+
+}

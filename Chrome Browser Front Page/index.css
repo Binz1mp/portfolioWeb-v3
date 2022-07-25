@@ -1,0 +1,418 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+:root {
+  --main-text-color: #3c4043;
+  --main-border-color: #bdc0c5;
+  --main-color-blue: #1967d2;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  color: var(--main-text-color);
+  line-height: 1.6em;
+  background-color: #f9fafe;
+  /* word-break: break-word;
+  word-wrap: break-word */
+}
+a {
+  text-decoration: none;
+  color: var(--main-color-blue);
+}
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Common CSS */
+.btn-download {
+  background-color: var(--main-color-blue);
+  color: #fff;
+  display: inline-block;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 32px;
+  font-weight: 500;
+}
+.btn-download:hover {
+  background-color: rgb(21, 94, 167);
+}
+.read-more::after, .want-update > a::after, .sitemap-contents a>span.arrow::after {
+  font-family: xeicon;
+  content: '\e907';
+  margin-left: 3px;
+  transition: 0.25s;
+  /* before after는 inline 요소라서 transform이 안된다.
+  그래서 inline-block 해야된다. */
+  display: inline-block;
+}
+.read-more:hover::after, .want-update > a:hover::after, .sitemap-contents a:hover>span.arrow::after {
+  transform: translateX(4px);
+}
+
+/* Header */
+header {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+  z-index: 10;
+  padding: 0 20px;
+  top: 0;
+}
+.logo {
+  float: left;
+  margin-top: 16px;
+}
+.download {
+  float: right;
+  margin-top: 10px;
+  transform: translateX(200px);
+  transition: 0.5s;
+}
+.download.active { 
+  transform: translateX(0);
+}
+
+/* Section - Welcome */
+section.welcome {
+  height: 1125px;
+  background: linear-gradient(15.69deg, #e8f0fe 10.16%, rgba(255, 255, 255, 0) 89.84%);
+  z-index: 0;
+  position: relative;
+  margin-top: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+section.welcome > .background {
+  background-repeat: no-repeat;
+  background-position: top right;
+  pointer-events: none;
+}
+section.welcome > .background > #hero-anim-top-right {
+  position: absolute;
+  z-index: -1;
+  left: 75vw;
+  right: unset;
+  top: -20%;
+  animation-duration: 10s;
+}
+section.welcome > .background > #hero-anim-middle {
+  position: absolute;
+  z-index: -1;
+  bottom: calc(50% - 80px);
+  right: 19%;
+  left: unset;
+  animation-duration: 20s;
+}
+section.welcome > .background > #hero-anim-bottom-left {
+  position: absolute;
+  z-index: -1;
+  bottom: 5%;
+  left: unset;
+  right: 75vw;
+  animation-duration: 14s;
+}
+@keyframes full-rotate-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rolling-icons {
+  will-change: transform;
+  animation-name: full-rotate-left;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.heading {
+  padding-top: 50px;
+  margin: auto;
+  width: 900px;
+  text-align: center;
+}
+.heading img {
+  width: 80px;
+}
+.heading h1 {
+  font-size: 60px;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+}
+.download-content .btn-download {
+  margin-bottom: 10px;
+}
+.download-content .want-update {
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.download-content span {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+}
+.statics {
+  font-size: 11px;
+  width: 480px;
+  margin: 0 auto;
+}
+.statics input[type=checkbox] {
+  transform: scale(1.5);
+}
+.big_pixel_phone {
+  /* margin-top: 30px; */
+  width: 100%;
+  margin: auto;
+  z-index: 5;
+  margin-bottom: 20px;
+}
+.big_pixel_phone > img {
+  width: 100%;
+}
+
+/* Section - feature */
+section.feature {
+  height: 500px;
+  padding: 60px 0;
+  margin: 0 75px;
+}
+.inner {
+  height: 100%;
+  max-width: 1296px;
+  display: grid;
+  /* 여긴 flex보단 grid가 더 어울리는 듯하다. */
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 2em;
+}
+.desc {
+  margin: 20px 100px;
+}
+.desc h1 {
+  font-size: 2.25rem;
+  line-height: 3.15rem;
+  padding: 8px 0;
+}
+.desc p {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.photo {
+  height: 100%;
+  overflow: hidden;
+}
+.photo img {
+  height: 100%;
+}
+
+/* Section - more-features */
+section.more-features {
+  width: 100%;
+  height: 700px;
+  display: block;
+  padding: 100px 0;
+}
+.features-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.features-title p {
+  font-weight: 500;
+  margin: 0;
+}
+.features-title h1 {
+  font-size: 40px;
+  line-height: 2.75rem;
+}
+.features-cards-wrapper {
+  margin: 0 auto;
+  max-width: 1065px;
+}
+.features-cards-container-flex {
+  display: flex;
+  min-height: 355px;
+  justify-content: space-between;
+}
+.cards {
+  border: 1px solid var(--main-border-color);
+  width: 228px;
+  border-radius: 8px;
+}
+.card-contents-flex {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.card-icon {
+  margin-bottom: 10px;
+}
+.headline {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 8px;
+}
+.card-desc {
+  margin-bottom: 60px;
+  min-height: 170px;
+}
+.card-link {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+/* Section - callaction */
+section.callaction {
+  height: 300px;
+  background: url(./images/download-bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: var(--main-color-blue);
+}
+.callaction-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.callaction-inner h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 40px;
+  line-height: 42px;
+}
+.callaction-inner a.btn-download {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.callaction-inner a.btn-download:hover {
+  background-color: #fff;
+  color: var(--main-text-color);
+}
+
+/* footer */
+footer {
+}
+.footer-inner {
+  margin: auto;
+  max-width: 1376px;
+}
+.sns-outer {
+  padding: 30px 0;
+}
+.sns {
+  font-size: 17px;
+}
+.sns b {
+  font-weight: normal;
+}
+.sns span a {
+  color: var(--main-text-color);
+  margin-left: 5px;
+}
+.sitemap {
+  /* height: 400px; */
+  padding: 50px 0;
+  border-top: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
+}
+.sitemap-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sitemap-menus {
+  width: 20%;
+  margin: 0;
+  padding: 0 5px;
+}
+.sitemap-title, .sitemap-contents a {
+  display: block;
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+.sitemap-title {
+  pointer-events: none;
+  padding-bottom: 20px;
+}
+.copyright {
+  padding-top: 40px;
+  padding-bottom: 11px;
+  margin: auto;
+  display: flex;
+}
+.policy a, .language a {
+  color: var(--main-text-color);
+}
+.logo-footer {
+  flex: 0;
+  margin-right: 55px;
+  margin-bottom: 30px;
+}
+.policy {
+  flex: 2;
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+.policy a {
+  padding-right: 30px;
+  padding-bottom: 18px;
+}
+.language {
+  flex: 1;
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+.language a {
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
+.language i {
+  margin-right: 10px;
+}
+.language select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(./images/icon-select.png);
+  background-repeat: no-repeat;
+  background-position: center right 5px;
+  border: none;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-overflow: ellipsis;
+  appearance: none;
+}
+.language select:focus {
+  outline: 2px solid var(--main-color-blue);
+  border-radius: 5px;
+}
+.sns-outer, .sitemap, .copyright {
+  padding-left: 32px;
+  padding-right: 32px;
+}

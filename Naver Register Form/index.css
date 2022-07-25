@@ -1,0 +1,180 @@
+/* Google Web Fonts CDN */
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* @media (prefers-color-scheme: dark) {
+  body, .member-footer a, .field.gender > div, select {
+    background-color: #181818 !important;
+    color: #ebebeb !important;
+  }
+  input {
+    background-color: #181818;
+    color: #ebebeb;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
+}
+body {
+  font-size: 14px;
+  background-color: #f5f6f7;
+  line-height: 1.5em;
+  color: #181818;
+  font-weight: 300;
+}
+a{
+  text-decoration: none;
+  color: #181818;
+}
+/* Reset CSS */
+input, select {
+  cursor: pointer;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(./images/icon-select.png);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Member Sign-in */
+.member {
+  width: 460px;
+  margin: auto;
+}
+.member .logo {
+  display: block;
+  margin: 50px auto;
+}
+.field {
+  margin: 5px 0;
+}
+.field b{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.member input:not(input[type=radio]), .field select {
+  border: 1px solid #999999;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.member input:not(input[type=radio]):focus, .field select:focus {
+  border: 1px solid #2db400;
+}
+
+.placehold-text {
+  display: block;
+  position: relative;
+}
+.placehold-text::before {
+  content: '@naver.com';
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  pointer-events: none;
+}
+.password-lock, .password-check {
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-size: 20px;
+}
+.password-lock {
+  background-image: url(./images/icon-01.png);
+}
+.password-check {
+  background-image: url(./images/icon-02.png);
+}
+.field.birth div {
+  display: flex;
+  gap: 10px;
+}
+.field.tel-number div {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0;
+}
+.field.tel-number div input:nth-child(1) {
+  flex: 2;
+}
+.field.tel-number div input:nth-child(2) {
+  flex: 1;
+}
+.field.gender div {
+  border: 1px solid #999999;
+  background-color: white;
+  padding: 15px;
+}
+/* Radio Check button */
+.field.gender input[name=gender] {
+  display: none;
+}
+.field.gender label {
+  cursor: pointer;
+  margin-right: 10px;
+}
+  .field.gender label em {
+  display: inline-block;
+  /* 크기 값 주기 위한 display 속성 지정 */
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  transform: translateY(3px);
+  /* display에 inline-block을 주고 크기값도 정했으니, 위치도 조정하자.
+  중앙 지정으로 vertical-align: middle,
+  margin-top: -2px
+  가 있으나, transform이 한줄짜리라 저걸 이용하는것.. */
+  background-image: url(./images/icon-radio.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.field.gender input[name=gender]:checked + em{
+  background-position: right;
+}
+
+.member input[type=button], .member input[type=submit] {
+  background-color: #2db400;
+  color: white;
+}
+.member-footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.member-footer div .ToS {
+  font-weight: 500;
+}
+.member-footer div a:not(:last-child)::after {
+  content: '|';
+  font-size: 10px;
+  margin-right: 5px;
+  padding-left: 7px;
+  display: inline-block;
+  transform: translateY(-2px);
+  /* display가 inline이 기본이었어서 상하 조정이 안됐었음.. 중요.. */
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color: #2db400;
+}
+
+@media (max-width: 768px) {
+  .member {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

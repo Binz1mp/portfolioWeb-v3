@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio_v3</title>
+  <!-- jQuery CDN 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- featherlight.js -->
+  <script src="./scripts/featherlight-1.7.13/featherlight.js"></script>
+  <link rel="stylesheet" href="./scripts/featherlight-1.7.13/featherlight.css">
+  <!-- Cumstom -->
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index-mobile.css">
+</head>
+<body>
+  
+  <div class="toggle">
+    <i class="xi-plus-thin"></i>
+  </div>
+  <div class="overlay"></div>
+  
+  <ul class="gnb">
+    <div class="gnb-dummy"></div>
+    <div class="gnb-inner">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#web-portfolio">Website Publishing</a>
+      </li>
+      <li>
+        <a href="#chrome-extension">Chrome Extension</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </div>
+  </ul>
+  
+  <div class="container">
+
+    <section class="welcome" id="home">
+      <div class="text-area">
+        <div class="title">
+          <h1>전호재의 웹 개발자 포트폴리오입니다.</h1>
+        </div>
+        <div class="inner-text">
+          <p>
+            안녕하세요.
+            <br>
+            전호재입니다.
+            <br>
+            웹페이지를 돌아다니면서 불편했던 점을 해결하기 위해
+            <br>
+            크롬 확장프로그램에 대해 공부하게 됐고,
+            <br>
+            간단한 확장프로그램들을 만들게 되면서 웹 개발을 시작했습니다.
+            <br>
+            요즘은 자바스크립트 공부를 잠시 멈추고, HTML과 CSS를 공부하고 있습니다.
+            <br>
+            자바스크립트 공부를 마치고 다음으로 Vue.js + Nuxt.js나 React.js + Next.js를 배울 예정입니다.
+        </p>
+        </div>
+      </div>
+      <!-- <video src="./videos/Fog.mp4" poster="images/no_image.png" autoplay muted loop></video> -->
+      <!-- <img src="./images/bg-welcome.jpg"> -->
+    </section>
+
+    <section id="about">
+      <div class="inner">
+        <div class="heading">
+          <b>간결하게, 필요한 것만.</b>
+          <h1>About</h1>
+          <div class="about-wrapper">
+            <div class="about-details">
+              <div class="about-name">
+                <div class="about-detail-1">이름</div>
+                <div class="about-detail-2">전호재</div>
+              </div>
+              <div class="about-birth">
+                <div class="about-detail-1">생년월일</div>
+                <div class="about-detail-2">1996.11.15</div>
+              </div>
+              <div class="about-phone">
+                <div class="about-detail-1">연락처</div>
+                <div class="about-detail-2">-</div>
+              </div>
+              <div class="about-email">
+                <div class="about-detail-1">이메일</div>
+                <div class="about-detail-2">binieon@naver.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="inner">
+        <div class="heading">
+          <b>공부중입니다.</b>
+          <h1>Skills</h1>
+          <div class="skills-wrapper">
+            <div class="skillboxes">
+              <div class="skill-title">Frontend</div>
+              <div class="skill-list">
+                <img src="images/frontend.png">
+              </div>
+            </div>
+            <div class="skillboxes">
+              <div class="skill-title">Version Control</div>
+              <div class="skill-list">
+                <img src="images/version-control.png">
+              </div>
+            </div>
+            <div class="skillboxes">
+              <div class="skill-title">Communication</div>
+              <div class="skill-list">
+                <img src="images/communication.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="web-portfolio">
+      <div class="inner">
+        <div class="heading">
+          <b>클론 코딩을 통한 UX/UI 체험</b>
+          <h1>Website Publishing</h1>
+          <div class="text-area">
+            <div class="inner-text">
+              <p>사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게</p>
+              <p>UX/UI 구조 설계를 진행하였습니다.</p>
+              <p>그리고 기존 사이트에서 반응형 페이지가 될 수 있도록 제작했습니다.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="item thum">
+              <div class="photo">
+                <img src="./images/web-portfolio-01.jpg">
+              </div>
+              <span class="portfolio-title">
+                네이버 로그인 페이지
+                <div class="demos">
+                  <a class="btn-view view-pc" href="./htmls/web-portfolio-01.html" data-featherlight="iframe">PC</a>
+                  <a class="btn-view view-mobile" href="./htmls/web-portfolio-01-mobile.html" data-featherlight="iframe">Mobile</a>
+                  <a class="btn-view view-demo" href="./Naver Register Form/index.html" data-featherlight="iframe">Demo</a>
+                </div>
+              </span>
+            </div>
+            <div class="item thum">
+              <div class="photo">
+                <img src="./images/web-portfolio-02.jpg">
+              </div>
+              <span class="portfolio-title">
+                구글 크롬 다운로드 페이지
+                <div class="demos">
+                  <a class="btn-view view-pc" href="./htmls/web-portfolio-02.html" data-featherlight="iframe">PC</a>
+                  <a class="btn-view view-mobile" href="./htmls/web-portfolio-02-mobile.html" data-featherlight="iframe">Mobile</a>
+                  <a class="btn-view view-demo" href="./Chrome Browser Front Page/index.html" data-featherlight="iframe">Demo</a>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chrome-extension">
+      <div class="inner">
+        <div class="heading">
+          <b>불편한 유저 경험을 해결하기 위해서 만들게 된 프로젝트</b>
+          <h1>Chrome-Extension</h1>
+          <div class="chrome-box">
+            <div class="chrome-box-inner">
+              <iframe class="showcase-1" width="520" height="720" src="https://www.youtube.com/embed/BxXAmUqmynY" title="Youtube Helper - Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h1 class="showcase-2">
+                <div>
+                  <img src="./images/youtubehelpershowcase.png" alt="">
+                </div>
+                Youtube Helper 사용 영상
+                <br>
+                (유튜브)로 이동
+              </h1>
+            </div>
+            <div class="chrome-box-inner">
+              <span class="logos">
+                <div class="logos-desc">크롬 웹스토어로 이동합니다.</div>
+                <img id="youtubehelper" src="./images/youtubehelper.png">
+              </span>
+                <span class="logos">
+                <div class="logos-desc">해당 깃허브 repo로 이동합니다.</div>
+                <img id="githublogo" src="./images/github.png">
+                </span>
+                <!-- <div>위 로고를 클릭하면 크롬 웹스토어로 이동합니다.</div> -->
+                <div class="chrome-box-title">Youtube Helper</div>
+                <div class="chrome-box-features">기능 구현 요약</div>
+                <div class="chrome-box-desc">
+                  <div class="chrome-box-desc-inner">
+                    <h1>
+                      <a class="btn-view view-crx-demo" href="./images/crx/1-collapse.png" data-featherlight="iframe">image 1</a>
+                    </h1>
+                    <div>유튜브의 관련 동영상을 가려줍니다.</div>
+                    <div>그와 동시에 유튜브를 극장 모드로 바꿔줍니다.</div>
+                    <h1>
+                      <a class="btn-view view-crx-demo" href="./images/crx/2-redirection.png" data-featherlight="iframe">image 2</a>
+                    </h1>
+                    <div>유튜브 Shorts에서 기존 유튜브의 레이아웃을 사용하게 합니다.</div>
+                    <h1>
+                      <a class="btn-view view-crx-demo" href="./images/crx/3-hover.png" data-featherlight="iframe">image 3</a>
+                    </h1>
+                    <div>스크롤을 내려도 유튜브 동영상을 계속 볼 수 있게 해줍니다.</div>
+                    <h1>
+                      <a class="btn-view view-crx-demo" href="./images/crx/4-pip.png" data-featherlight="iframe">image 4</a>
+                    </h1>
+                    <div>PIP (Picture In Picture) 버튼을 추가해줍니다.</div>
+                    <h1>
+                      <a class="btn-view view-crx-demo">5</a>
+                    </h1>
+                    <div>Top 버튼을 추가해줍니다.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- <section id="contact">
+      <div class="inner">
+        <div class="heading">
+          <b></b>
+          <h1>Contact</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at consectetur velit. Aenean sagittis dignissim ligula, convallis consequat nibh interdum at. Suspendisse non metus sed metus volutpat rhoncus. Suspendisse potenti. Nulla facilisi. Aenean dignissim egestas condimentum. Curabitur vestibulum elementum magna in bibendum. Morbi suscipit nunc sed justo scelerisque, a fermentum quam consectetur. Nulla facilisi. Aliquam at quam a tellus pharetra vestibulum non et lacus. Vestibulum placerat, nulla nec congue vulputate, arcu ex egestas metus, nec congue tortor turpis et lectus. Donec a est est. Curabitur rutrum scelerisque tortor quis pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+        </div>
+      </div>
+    </section> -->
+    <nav class="topdown">
+      <a href="#home"><div class="button-top"></div></a>
+      <a href="#bottom"><div class="button-down"></div></a>
+    </nav>
+    <footer id="bottom">
+      <div>
+        <span class="gridbox">
+          <span class="my-name"><a>전호재</a></span>
+          <span class="seperate"></span>
+          <span class="my-email"><a>binieon@naver.com</a></span>
+          <span class="seperate"></span>
+          <span class="my-github"><a href="https://github.com/Binz1mp" target="_blank">Github</a></span>
+        </span>
+      </div>
+    </footer>
+  </div>
+  
+<script src="./index.js"></script>
+</body>
+</html>
