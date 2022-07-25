@@ -1,4 +1,33 @@
 @media (max-width: 768px) {
+  /* 임시 메뉴바 */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .navbar-container {
+    padding-right: 20px;
+  }
+  .navbar-mobile {
+    display: block;
+    padding: 20px;
+    background-color: black;
+    opacity: 0.75;
+    width: 218.5px;
+  }
+  .menus {
+    display: none;
+    flex-direction: column;
+  }
+  .menus-mobile {
+    display: block;
+  }
+  .navbar li {
+    padding: 16px 0;
+    display: block;
+  }
+  .navbar span {
+    display: none;
+  }
   /* gnb */
   .gnb {
     text-align: center;

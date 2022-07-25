@@ -10,19 +10,31 @@
   <!-- featherlight.js -->
   <script src="./scripts/featherlight-1.7.13/featherlight.js"></script>
   <link rel="stylesheet" href="./scripts/featherlight-1.7.13/featherlight.css">
-  <!-- XEIcon CDN 2.3.3 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <!-- Cumstom -->
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./index-mobile.css">
 </head>
 <body>
-  
+  <div class="navbar">
+    <div class="navbar-mobile">메뉴 바 보이기</div>
+    <div class="navbar-container">
+      <ul class="menus">
+        <li><a href="#home">Home</a></li>
+        <span>|</span>
+        <li><a href="#about">About</a></li>
+        <span>|</span>
+        <li><a href="#skills">Skills</a></li>
+        <span>|</span>
+        <li><a href="#web-portfolio">Website Publishing</a></li>
+        <span>|</span>
+        <li><a href="#chrome-extension">Chrome Extension</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="toggle">
     <i class="xi-plus-thin"></i>
   </div>
   <div class="overlay"></div>
-  
   <ul class="gnb">
     <div class="gnb-dummy"></div>
     <div class="gnb-inner">
@@ -42,7 +54,7 @@
         <a href="#chrome-extension">Chrome Extension</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact" style="pointer-events: none;"><del>Contact</del></a>
       </li>
     </div>
   </ul>
