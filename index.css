@@ -31,6 +31,10 @@ body {
 .navbar-mobile {
   display: none;
 }
+.menus {
+  display: none;
+  flex-direction: column;
+}
 
 /* Toggle icon */
 .toggle {
