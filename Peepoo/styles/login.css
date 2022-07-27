@@ -46,6 +46,9 @@
   position: relative;
   padding-top: 20px;
 }
+.ndex {
+  color: #42c262;
+}
 .login-logo {
   position: absolute;
   right: -40px;

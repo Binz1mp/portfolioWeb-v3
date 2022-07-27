@@ -16,6 +16,25 @@
   font-weight: normal;
   font-style: normal;
 }
+@media (prefers-color-scheme: dark) {
+  body,
+  .loading-container, .login-container,
+  #login-id, #login-password {
+    background-color: #181818 !important;
+    color: #ebebeb !important;
+  }
+  .ndex-l {
+    color: #42c262;
+  }
+  .loading-title-main {
+    color: #5fabf1;
+  }
+  #login-submit {
+    background-color: #181818 !important;
+    outline: 2px solid rgb(156, 156, 156) !important;
+    color: rgb(156, 156, 156) !important;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -67,7 +86,7 @@ body {
   z-index: 2;
 }
 .loading-logo {
-  z-index: 1;
+  z-index: -1;
   display: inline-block;
   animation: rolling 3s linear infinite;
 }
