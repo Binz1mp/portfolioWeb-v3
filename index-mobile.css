@@ -1,25 +1,40 @@
 @media (max-width: 768px) {
   /* 임시 메뉴바 */
-  .navbar {
+  /* Navbar */
+  /* 임시 네비게이션 바 */
+  /* 원래는 안쓰지만, github에서는 xeicon을 불러오지 못하는 것 같다.. */
+  .navbar{
+    /* padding: 0 50px; */
+    position: fixed;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    z-index: 10;
   }
   .navbar-container {
+    background-color: #000;
+    opacity: 0.75;
+    /* float: right; */
     padding-right: 20px;
+    width: 250px;
   }
   .navbar-mobile {
     display: block;
+    width: 250px;
     padding: 20px;
     background-color: black;
     opacity: 0.75;
-    width: 218.5px;
   }
   .menus {
     display: none;
     flex-direction: column;
   }
-  .menus-mobile {
-    display: block;
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   .navbar li {
     padding: 16px 0;
@@ -28,6 +43,16 @@
   .navbar span {
     display: none;
   }
+  .navbar a {
+    text-decoration: none;
+    color: #ebebeb;
+    padding: 20px;
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    color: #fff;
+  }
+
   /* gnb */
   .gnb {
     text-align: center;
@@ -58,6 +83,7 @@
   section#skills {
     height: auto;
   }
+
   /* Section - About */
   section#about {
     height: 100%;
@@ -71,6 +97,7 @@
   .about-details > div {
     width: auto;
   }
+  
   /* Section - Skills */
   .skills-wrapper {
     display: flex;
@@ -80,6 +107,12 @@
   .items {
     width: 100%;
     grid-template-columns: repeat(1, 1fr)
+  }
+  .item.thum {
+    width: 80%;
+  }
+  .item.thum .photo {
+    width: 100%;
   }
   .skillboxes {
     width: 75%;
@@ -95,6 +128,9 @@
   }
   .showcase-2 {
     display: block;
+  }
+  #showcase-youtube {
+    cursor: pointer;
   }
   .chrome-box-desc {
     width: 80%;
@@ -129,13 +165,23 @@
   .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-items: center;
   }
   .items {
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .item.thum:nth-of-type(3), .item.thum:nth-of-type(4) {
+  .item.thum {
+    width: 100%;
+  }
+  .item.thum .photo {
+    width: 100%;
+  }
+  .item.thum:nth-of-type(3) {
     grid-column: 1 / span 2;
+    width: 50%;
+  }
+  .item.thum:nth-of-type(3) .photo {
+    width: 100%;
   }
 
   .chrome-box {
@@ -145,7 +191,4 @@
     width: 80%;
     margin: auto;
   }
-  .chrome-box-desc-inner {
-  }
-
 }

@@ -28,44 +28,9 @@ body {
   margin: 0;
   line-height: 1.6em;
 }
-/* Navbar */
-/* 임시 네비게이션 바 */
-/* 원래는 안쓰지만, github에서는 xeicon을 불러오지 못하는 것 같다.. */
-.navbar{
-  /* padding: 0 50px; */
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  z-index: 10;
-}
-.navbar-container {
-  background-color: #000;
-  opacity: 0.75;
-  /* float: right; */
-}
 .navbar-mobile {
   display: none;
 }
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.navbar li {
-  padding: 16px 0;
-  display: inline-block;
-}
-.navbar a {
-  text-decoration: none;
-  color: #ebebeb;
-  padding: 20px;
-  font-weight: 500;
-}
-.navbar a:hover {
-  color: #fff;
-}
-
 
 /* Toggle icon */
 .toggle {
@@ -212,8 +177,7 @@ section.welcome {
   padding: 25px;
   z-index: 1;
   color: #ebebeb;
-  margin: 30px auto;
-  margin-top: 0;
+  margin: 0px auto;
 }
 .text-area h1 {
   font-size: 3em;
@@ -316,24 +280,29 @@ section#skills {
 
 
 /* Section - Web portfolio */
+section#web-portfolio {
+  height: 100%;
+}
 .items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   grid-gap: 30px;
-  margin-bottom: 15px;
 }
 .item.thum .photo {
-  width: 100%;
+  width: 350px;
   height: 400px;
   border-radius: 5px;
   box-shadow: 0 15px 45px -10px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   transition: 0.3s;
+  justify-items: center;
 }
 .item.thum .photo:hover {
   transform: scale(105%);
 }
 .item.thum .photo img {
+  width: 100%;
   transition: 1s;
   width: inherit;
   height: inherit;
