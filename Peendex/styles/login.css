@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'MICEGothic Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --main-login-color-bg: rgb(200, 200, 200);
+  --main-login-color-text: rgb(175, 175, 175);
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.login-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 35%;
+}
+.login-title-sub-text {
+  font-family: 'MICEGothic Bold';
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+.login-title-main {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: var(--main-color-blue);
+  font-size: 4.5em;
+  /* font-weight: bold; */
+  line-height: 1em;
+  z-index: 2;
+  position: relative;
+  padding-top: 20px;
+}
+.ndex {
+  color: #42c262;
+}
+.login-logo {
+  position: absolute;
+  right: -40px;
+  top: -20px;
+}
+.login-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#login-id, #login-password, #login-submit {
+  padding: 13px 30px;
+  padding-top: 15px;
+  border-radius: 25px;
+  transition: all 0.25s;
+}
+#login-id, #login-password {
+  font-size: 1em;
+  width: 380px;
+  color: var(--main-login-color-text);
+  border: none;
+  outline: 2px solid var(--main-login-color-bg);
+  font-weight: bold;
+}
+#login-id::placeholder, #login-password::placeholder {
+  color: var(--main-login-color-text);
+}
+#login-id:focus, #login-password:focus,
+#login-id:hover, #login-password:hover {
+  color: var(--main-login-color-text);
+  outline: 2px solid rgb(156, 156, 156);
+}
+#login-submit {
+  font-family: 'MICEGothic Bold';
+  cursor: pointer;
+  width: 150px;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: var(--main-login-color-bg);
+  margin: 15px 0;
+  border: none;
+}
+#login-submit:hover {
+  background-color: var(--main-color-blue);
+}
+#login-submit:active {
+  transform: scale(95%);
+}
+.login-help div {
+  display: inline;
+}
+.login-help a {
+  margin: 20px 0;
+  color: var(--main-login-color-text);
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.login-help div:not(:last-child)::after {
+  content: '|';
+  color: var(--main-login-color-text);
+  margin: 0 10px;
+}
+.login-with {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+.login-with img {
+  /* outline: 1px solid var(--main-login-color-bg); */
+  border-radius: 100%;
+  width: 50px;
+  transition: all 0.25s;
+}
+.login-with img:hover {
+  transform: scale(110%);
+}
+.login-with img:active {
+  transform: scale(100%);
+}

@@ -1,0 +1,43 @@
+@media (prefers-color-scheme: dark) {
+  body,
+  .loading-container, .login-container,
+  #login-id, #login-password {
+    background-color: var(--main-color-black-darkmode);
+    color: var(--main-color-white-darkmode);
+  }
+  .ndex-l {
+    color: #42c262;
+  }
+  .loading-title-main {
+    color: #5fabf1;
+  }
+  #login-id, #login-password ,#login-submit {
+    background-color: #181818;
+    outline: 2px solid rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
+  }
+  #login-id:hover, #login-password:hover {
+    outline: 2px solid var(--main-color-white-darkmode);
+    color: var(--main-color-white-darkmode);
+  }
+  #login-id:focus, #login-password:focus {
+    outline: 2px solid var(--main-color-white-darkmode);
+  }
+  #login-submit:hover {
+    outline: 2px solid var(--main-color-white-darkmode);
+    background-color: var(--main-color-blue-darkmode);
+    color: var(--main-color-white-darkmode);
+  }
+}
+
+:root {
+  --main-color-black-darkmode: #181818;
+  --main-color-blue-darkmode: #0058aa;
+  --main-color-green-darkmode: #086d32;
+  --main-color-white-darkmode: #ebebeb;
+}
+/*
+var(--main-color-black--darkmode);
+var(--main-color-blue-darkmode);
+var(--main-color-white-darkmode);
+*/
