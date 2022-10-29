@@ -44,6 +44,21 @@ body {
   cursor: pointer;
   z-index: 101;
 }
+.toggle div {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0 , 0, 0.5);
+  transition: 0.5s;
+}
+.toggle.active div {
+  transform: rotate(315deg);
+}
 .toggle.active i {
   transform: rotate(315deg);
 }

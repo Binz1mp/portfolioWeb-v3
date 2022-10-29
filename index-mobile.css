@@ -48,6 +48,9 @@
   .navbar a:hover {
     color: #fff;
   }
+  .toggle {
+    display: none;
+  }
 
   /* gnb */
   .gnb {
